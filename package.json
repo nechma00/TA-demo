@@ -1,0 +1,25 @@
+{
+  "name": "ta-demo",
+  "version": "1.0.0",
+  "description": "playwright with typescript demo project",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "codegen": "playwright codegen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.0",
+    "dotenv": "^17.3.1"
+  },
+  "dependencies": {
+    "nanoid": "^5.1.6"
+  }
+}
