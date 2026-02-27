@@ -123,9 +123,6 @@ export async function deleteArticle(token: string, slug: string) {
 
 export const test = base.extend<Fixtures>({
   newUser: async ({}, use) => {
-    const requestContext = await request.newContext({
-      baseURL: process.env.API_URL || "http://localhost:8000",
-    });
     const response = await createUser();
     const user = response.userinfo.user;
 

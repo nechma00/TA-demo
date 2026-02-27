@@ -84,7 +84,6 @@ test("should edit existing article", async ({
 
   await test.step("open existing article in editor", async () => {
     await articlePage.navigateToArticle(userWithRandomArticle.article.slug);
-    console.log(articlePage.page.url());
     await articlePage.editArticleButton.click();
     await expect(editorPage.articleEditorHeading).toBeVisible();
   });
